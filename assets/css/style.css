@@ -60,9 +60,9 @@ form button:hover {
   background: var(--primary-color-darker);
 }
 
-#start,
-#pause,
-#reset {
+.start,
+.pause,
+.reset {
   margin: 5px;
   padding: 5px 10px;
   font-size: 20px;
@@ -72,15 +72,15 @@ form button:hover {
   color: #fff;
 }
 
-#start:hover,
-#pause:hover,
-#reset:hover {
+.start:hover,
+.pause:hover,
+.reset:hover {
   background-color: var(--primary-color);
 }
 
-#start:active,
-#pause:active,
-#reset:active {
+.start:active,
+.pause:active,
+.reset:active {
   background-color: gray;
 }
 
