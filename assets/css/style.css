@@ -104,3 +104,7 @@ form button:hover {
   font-family: 'VT323', monospace;
   margin: 20px auto 20px auto;
 }
+
+.paused {
+  color: red;
+}
