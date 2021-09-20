@@ -10,7 +10,7 @@ let seconds = 0;
 let millisecs = 0;
 
 start.addEventListener('click', (event) => {
-  timer.style.color = 'black';
+  timer.classList.remove('paused');
 
   if (startTimer) clearInterval(startTimer);
 
@@ -34,12 +34,13 @@ start.addEventListener('click', (event) => {
 });
 
 pause.addEventListener('click', (event) => {
-  timer.style.color = 'red';
+  timer.classList.add('paused');
   clearInterval(startTimer);
 });
 
 reset.addEventListener('click', (event) => {
   [hours, minutes, seconds, millisecs] = [0, 0, 0, 0];
+  timer.classList.remove('paused');
   timer.innerHTML = `${leftZero(hours)}:${leftZero(minutes)}:${leftZero(seconds)}:${leftZero(millisecs)}`;
 });
 
