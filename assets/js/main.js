@@ -47,5 +47,3 @@ reset.addEventListener('click', (event) => {
 function leftZero(num) {
   return num < 10 ? `0${num}` : `${num}`;
 }
-
-// testing
